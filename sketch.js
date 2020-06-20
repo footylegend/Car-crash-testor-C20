@@ -29,12 +29,18 @@ function draw() {
    car.collide(wall);
    if(deformation<100){
       car.shapeColor="green";
+      fill("green");
+      text("all is safe",500,100);
    }
    if(deformation>100 && deformation<180){
       car.shapeColor="yellow";
+      fill("yellow");
+      text("not quite safe",500,100);
    }
    if(deformation>180){
       car.shapeColor="red";
+     fill("red");
+      text("disqualified",500,100);
    }
  }
  else{
